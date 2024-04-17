@@ -1,7 +1,6 @@
-function generateMarkdown(data) {
-    return `
+function generateMarkdown(data){
+return`
     # ${data.title}
-    ${data.license}
     
     ### Description
     
@@ -9,6 +8,10 @@ function generateMarkdown(data) {
     
     ### Table of Contents
     * Installation
+    * Usage
+    * Test
+    * Inspiration
+    * Questions
     
     ## Installation
     To install, follow the following commands:
@@ -22,11 +25,12 @@ function generateMarkdown(data) {
     ## Test
     ${data.test}
 
+    ## Inspiration
+    ${data.motivation}
+    ${data.enjoyment}
+
     ## Questions
     ${data.email}
     ${data.github}
-   
-    `
+`
 }
-
-module.exports = generateMarkdown;
