@@ -11,3 +11,4 @@ To use the generator, you must open the integrated terminal within the index.js 
 
 Attached is a video showing how to use integrated terminal:
 
+https://drive.google.com/file/d/1vZwC83_0qaZEBGdXs7vjySwmVXlNajR4/view?usp=sharing
