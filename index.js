@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
-const package = require("path");
+const path = require("path");
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require("generateMarkdown");
+const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -27,6 +27,14 @@ const questions = [
         name: "license",
         message: "What type of license should your project have?",
         choices: ["MIT", "APACHE", "GPL", "None"]
+    }, {
+        type: "input",
+        name: "installation",
+        message: "What command should be run to install dependencies?"
+    }, {
+        type: "input",
+        name: "test",
+        message: "What command should be run to run a test?"
     }, {
         type: "input",
         name: "motivation",
