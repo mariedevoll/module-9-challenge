@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const path = require("path");
 const fs = require("fs");
-const inquirer = require("inquirer");
+const inquirer = require("inquirer")
 const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -60,7 +60,7 @@ function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log("Generating README...");
         writeToFile("README.md", generateMarkdown({...inquirerResponses}))
-    })
+    });
 }
 
 // Function call to initialize app

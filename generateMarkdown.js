@@ -34,3 +34,5 @@ return`
     ${data.github}
 `
 }
+
+module.exports = generateMarkdown;
